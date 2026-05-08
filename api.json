@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-08",
     "repository": "https://github.com/wyrdness/krampus",
     "maintainers": [
       {
@@ -16,72 +16,162 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "krampus",
     "name": "Krampus",
-    "aliases": [],
-    "category": "ENTITY_SPIRIT",
-    "subcategory": "Alpine Tradition",
-    "tags": [
-      "folklore",
-      "mythology"
+    "aliases": [
+      { "name": "Krampusz", "language": "Hungarian", "region": "Hungary" },
+      { "name": "Kramper", "language": "German (dialectal)", "region": "Austria, Bavaria" },
+      { "name": "Klaubauf", "language": "German", "region": "Austria, Bavaria", "meaning": "One who grabs up (children)" },
+      { "name": "Klaubaufmann", "language": "German", "region": "Bavaria" },
+      { "name": "Bartl", "language": "German", "region": "Bavaria" },
+      { "name": "Strohbart", "language": "German", "region": "Bavaria", "meaning": "Straw beard" },
+      { "name": "Schmutzli", "language": "German (Swiss)", "region": "Switzerland", "meaning": "Dirty one" },
+      { "name": "Père Fouettard", "language": "French", "region": "France, Belgium", "meaning": "Father Whipper" },
+      { "name": "Parkelj", "language": "Slovenian", "region": "Slovenia", "meaning": "Companion of Miklavž (Slovenian St. Nicholas)" }
     ],
-    "status": "documented",
+    "category": "ENTITY_SPIRIT",
+    "subcategory": "Alpine folkloric punisher / companion of Saint Nicholas",
+    "tags": [
+      "alpine",
+      "christmas",
+      "folklore",
+      "central-europe",
+      "winter-festival",
+      "demon",
+      "shapeshifter",
+      "children",
+      "saint-nicholas"
+    ],
+    "status": "active",
     "description": {
-      "summary": "Krampus is a horned, anthropomorphic figure from Alpine folklore who punishes misbehaving children during the Christmas season, contrasting with St.",
-      "full": "Krampus is a horned, anthropomorphic figure from Alpine folklore who punishes misbehaving children during the Christmas season, contrasting with St. Nicholas who rewards well-behaved ones. Depicted with horns, cloven hooves, a long tongue, dark hair or fur, and carrying chains and bells, Krampus beats bad children with birch branches or carries them away in a sack or basket. Originating from pre-Christian Alpine traditions and horned pagan winter festival figures, Krampus traditions have experienced a modern revival, particularly since the 2000s, with Krampuslauf runs through Alpine streets and increasing international cultural recognition. ⚠️ **Cultural Sensitivity**: Krampus is a living folk tradition in Alpine regions. Respect for authentic traditions and local communities is essential."
+      "summary": "A horned, anthropomorphic figure from Central Alpine folklore who accompanies Saint Nicholas on December 5th (Krampusnacht), punishing misbehaving children with birch rods and threatening to carry the worst offenders away in a sack.",
+      "full": "Krampus is one of the most vivid and enduring figures of Central and Eastern Alpine winter tradition. He appears on the eve of Saint Nicholas Day (December 5), accompanying the saint as a dark counterpart: while Nicholas rewards well-behaved children with gifts, Krampus punishes the naughty with birch branches or chains, and in the most extreme tradition, carries the worst offenders away in a sack or basket. Physically, Krampus is depicted as a hairy, dark figure — typically brown or black — with curved horns, one human foot and one cloven goat hoof, a long pointed tongue, sharp fangs, and rattling chains said to symbolize the Devil's binding by the Christian Church. His imagery combines elements of pre-Christian Alpine winter spirits (particularly the Perchten tradition of masked processions) with Christian diabolism. While some folklorists have proposed pre-Christian roots, historians note that Krampus is not documented before the 16th century. By the 17th century he was firmly established as Saint Nicholas's punishing companion. The tradition was suppressed under Austria's Dollfuss clerico-fascist regime in 1932 and discouraged again in the 1950s. A major revival began in the late 20th century, with Krampuslauf processions (runs through Alpine streets by costumed participants) becoming popular events. Since the 2000s the figure has spread globally through horror films, greeting card culture, and seasonal events."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "The word Krampus derives from the Old High German Krampen, meaning 'claw.' The connection is to the creature's grasping claws and the hooked appearance of his goat-like features.",
+      "meaning": "Claw; by extension the clawed or goat-footed figure",
+      "first_use": "16th century (first documented in Alpine regions)"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "ENTITY_SPIRIT",
-      "type": "Alpine Tradition",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Folkloric punisher",
+      "subtype": "Alpine winter spirit",
+      "variant": "Companion of Saint Nicholas"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "perchta", "name": "Perchta", "relationship": "related", "description": "Alpine winter spirit of similar tradition; Perchtenlauf processions are related to Krampuslauf" },
+      { "id": "belsnickel", "name": "Belsnickel", "relationship": "similar", "description": "Pennsylvania German punishing Christmas figure with similar role" },
+      { "id": "black-pete", "name": "Zwarte Piet", "relationship": "similar", "description": "Dutch companion of Sinterklaas with punishing role" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["dark brown", "black"],
+      "features": [
+        { "feature": "Horns", "description": "Curved goat-like horns, often dramatic in size; a defining visual marker", "frequency": "always" },
+        { "feature": "Cloven hoof", "description": "One human foot and one cloven goat hoof", "frequency": "always" },
+        { "feature": "Long tongue", "description": "Long, pointed tongue often depicted extended", "frequency": "always" },
+        { "feature": "Shaggy fur or hair", "description": "Body covered in dark brown or black fur or hair", "frequency": "always" },
+        { "feature": "Chains", "description": "Wears or carries rattling chains, symbolizing the Devil's binding by the Church", "frequency": "common" },
+        { "feature": "Birch branches or whip", "description": "Carries birch rods (Ruten) used to strike naughty children", "frequency": "common" },
+        { "feature": "Sack or basket", "description": "Carries a large sack or wicker basket to transport especially bad children", "frequency": "common" },
+        { "feature": "Fangs", "description": "Sharp teeth or fangs, emphasizing demonic appearance", "frequency": "common" }
+      ],
+      "morphology": "Anthropomorphic bipedal figure combining human and goat characteristics; broadly interpreted as a demonic figure or Alpine horned spirit. Hand-carved wooden masks worn during Krampuslauf are a distinct Bavarian artistic tradition."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Child punishment", "description": "Beats misbehaving children with birch rods (Ruten)", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Abduction", "description": "Carries the worst-behaved children away in his sack, supposedly to his lair or to Hell", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Shapeshifting", "description": "Some traditions describe Krampus as capable of disguise, appearing unexpected", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": ["Alpine villages", "Central European towns during winter festival season"],
+      "diet": "Naughty children (folkloric; not literal)",
+      "patterns": [
+        "Appears exclusively on the eve of Saint Nicholas Day (December 5, Krampusnacht)",
+        "Accompanies Saint Nicholas during his rounds",
+        "Punishes children deemed naughty while Nicholas rewards the well-behaved",
+        "Represented in mass public events (Krampuslauf) where costumed participants run through streets"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Traditional range covers the Central and Eastern Alpine region. Active celebrations are found across Austria, Bavaria, Czech Republic, Slovakia, Slovenia, Croatia, Bosnia and Herzegovina, Hungary, Romania, Bulgaria, Northern Italy, and parts of the Low Countries. Since the late 20th century, Krampus traditions have spread to North America and globally.",
+      "continents": ["Europe", "North America (modern adoption)"],
+      "countries": ["Austria", "Germany", "Czech Republic", "Slovakia", "Slovenia", "Croatia", "Hungary", "Romania", "Bulgaria", "Italy", "United States", "Canada"],
+      "regions": [
+        "Austrian Alps",
+        "Bavaria",
+        "Tyrol",
+        "Styria",
+        "Carinthia",
+        "South Tyrol",
+        "Salzburg region"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Styria, Austria",
+        "location": {
+          "description": "Styrian Alpine region; site of anthropologist John J. Honigmann's 1975 field observations",
+          "country": "Austria",
+          "region": "Styria"
+        },
+        "notes": "One of the most documented regions for active Krampus tradition; Honigmann observed Krampus celebrations here in 1975"
+      },
+      {
+        "name": "East Tyrol, Austria",
+        "location": {
+          "description": "Lienz district, East Tyrol; site of well-documented Krampuslauf",
+          "country": "Austria",
+          "region": "Tyrol",
+          "coordinates": { "latitude": 46.83, "longitude": 12.76 }
+        },
+        "notes": "In 2013, eight people were hospitalized with injuries following East Tyrolean Krampuslauf runs"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1600-01-01",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Krampus is not documented before the 16th century; by the 17th century he was established as St. Nicholas's companion"
+      },
+      "peak_activity_periods": [
+        { "period": "19th century", "description": "Height of Krampuskarten (greeting card) exchange tradition; elaborate Alpine Krampuslauf traditions consolidated" },
+        { "period": "2000s–present", "description": "Global cultural revival driven by horror films, social media, and growing North American Krampusnacht celebrations" }
+      ],
+      "seasonal_patterns": "Strictly confined to the winter season; activities center on December 5 (Krampusnacht / St. Nicholas Eve). Krampuslauf events may run across the first weeks of December in some regions."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Alpine winter spirit traditions, including the Perchten (masked figures associated with Perchta), predate recorded Krampus accounts. Historians generally consider purely pre-Christian origins unlikely, as Krampus is not attested before the 16th century. By the 17th century, pairing Krampus with Saint Nicholas resolved a theological problem: it was deemed unseemly for a saint to deliver punishment.",
+      "earliest_accounts": "16th century — first documented appearances in Alpine sources. By the 17th century Krampus was established as Saint Nicholas's punishing companion across the Central Alpine region.",
+      "folklore_connections": "Connected to the broader European tradition of punishing winter figures accompanying gift-bringers: Zwarte Piet (Netherlands), Père Fouettard (France/Belgium), Belsnickel (Pennsylvania German), and the Knecht Ruprecht tradition. Shares visual elements with Alpine Perchten masked procession figures."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1600-01-01", "event": "Krampus first documented in Alpine sources as a companion to Saint Nicholas", "significance": "Earliest confirmed documentation", "source": "Various Alpine regional folklore records (16th–17th century)" },
+      { "date": "1800-01-01", "event": "Krampuskarten (Krampus greeting cards) become widespread in the 19th century, exchanged among adults with humorous or salacious messages", "significance": "Marks the commercialization and popularization of Krampus imagery", "source": "19th-century postcard collections" },
+      { "date": "1932-01-01", "event": "Austrian Dollfuss regime bans Krampus traditions as part of clerical fascist governance", "significance": "First major institutional suppression of the tradition", "source": "Historical records of Dollfuss-era Austria" },
+      { "date": "1958-01-01", "event": "Maurice Bruce publishes 'The Krampus in Styria' in the journal Folklore, one of the first English-language academic treatments", "significance": "Early English-language academic documentation", "source": "Bruce, M. (1958), 'The Krampus in Styria,' Folklore" },
+      { "date": "1975-01-01", "event": "Anthropologist John J. Honigmann conducts field observations of Styrian Krampus celebrations", "significance": "Academic field documentation of living tradition", "source": "Honigmann, J. J. (1975)" },
+      { "date": "2015-01-01", "event": "Universal Pictures releases the horror film Krampus, directed by Michael Dougherty", "significance": "Major Hollywood production accelerating global recognition", "source": "Krampus (film, 2015, Universal Pictures)" }
+    ],
+    "modern_era": "Since the 1990s, Krampus has experienced a major cultural revival in Alpine regions and internationally. Bavarian hand-carved wooden Krampus masks are a recognized folk-art form. North American Krampusnacht celebrations, often held in bars and community spaces, have proliferated since the 2000s. The 2015 Universal Pictures horror film Krampus brought the figure to global mainstream audiences."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +182,98 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
-    "photographic": [],
+    "photographic": [
+      {
+        "id": "krampus-evidence-krampuskarten",
+        "type": "historical postcards",
+        "name": "19th-century Krampuskarten",
+        "date": "1800-01-01",
+        "description": "A large corpus of 19th and early 20th century illustrated greeting cards (Krampuskarten) depicting Krampus menacing or punishing children, often with humorous verse. Widely collected and documented.",
+        "status": "verified",
+        "analysis": "Primary visual record of Krampus iconography as it standardized during the 19th century.",
+        "source": "Various archival collections; documented in Ridenour, A. (2016)"
+      }
+    ],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": []
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "scientific": [
+      {
+        "name": "Pre-Christian Alpine spirit tradition",
+        "description": "Some folklorists propose Krampus evolved from older Alpine winter spirits such as the Perchten, representing the dangerous, chaotic aspects of winter. However, historians caution that this theory is not supported by pre-16th-century documentation.",
+        "proponents": ["Various Alpine folklorists"],
+        "evidence_cited": ["Visual similarities between Krampus and Perchten mask traditions", "Alpine winter spirit traditions predating documented Krampus accounts"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Christian-era theological construct",
+        "description": "Historians generally view Krampus as a 16th–17th century Christian-era construction: the logical need for a punishing figure separate from the saintly Nicholas, combined with existing imagery of the Devil from Christian iconography and Alpine masked procession traditions.",
+        "proponents": ["Maurice Bruce", "John J. Honigmann"],
+        "evidence_cited": ["No documented Krampus before the 16th century", "17th-century pairing with Saint Nicholas solves a theological problem", "Devil imagery in Catholic Alpine regions closely matches Krampus depiction"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Krampusnacht (December 5): Krampus visits homes alongside Saint Nicholas",
+        "Krampuslauf: costumed runs through Alpine streets; young men in Krampus costumes frighten spectators",
+        "Krampuskarten: greeting cards exchanged among adults since the 19th century",
+        "Perchtenlauf: related Alpine masked procession tradition"
+      ],
+      "stories": [
+        "Krampus carries naughty children away in his sack to his lair or to Hell",
+        "Children are advised to be on their best behavior throughout Advent to avoid Krampus's punishment"
+      ],
+      "beliefs": "In traditional Alpine communities, Krampus serves a genuine moral instruction function: the fear of the horned punisher reinforces good behavior among children during the Advent season. The paired appearance with Saint Nicholas embodies the complementary principles of reward and punishment."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "The Krampus and the Old Dark Christmas — Al Ridenour (2016)",
+        "Krampus: The Devil of Christmas — Monte Beauchamp (2010)"
+      ],
+      "film_tv": [
+        "Krampus (2015, Universal Pictures, dir. Michael Dougherty)",
+        "Red One (2024, Amazon Studios)",
+        "The League — Krampus episode",
+        "American Dad! — Krampus episode",
+        "The Venture Bros. — Krampus appearance"
+      ],
+      "games": [
+        "The Binding of Isaac: Rebirth — Krampus as boss character",
+        "CarnEvil — Krampus character"
+      ],
+      "other": [
+        "Image Comics Krampus series (2013)",
+        "Growing Krampusnacht celebration events across North America",
+        "Bavarian hand-carved wooden Krampus masks as recognized folk art"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Maurice Bruce", "affiliation": "Independent folklorist", "contribution": "Published 'The Krampus in Styria' (Folklore, 1958), one of the first English-language academic treatments of the tradition", "period": "1958" },
+      { "name": "John J. Honigmann", "affiliation": "Anthropologist", "contribution": "Conducted 1975 field observations of Styrian Krampus celebrations; documented the living tradition", "period": "1975" },
+      { "name": "Al Ridenour", "affiliation": "Independent researcher", "contribution": "Published The Krampus and the Old Dark Christmas (2016), the most comprehensive English-language survey", "period": "2016" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "Ethnographic study of the living Krampus tradition continues in Austrian, Bavarian, and Slovenian academic institutions. The spread of Krampus celebrations to North America and internationally has attracted sociological and media-studies interest."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "ridenour-2016", "type": "book", "title": "The Krampus and the Old Dark Christmas", "authors": ["Al Ridenour"], "publication": "Feral House", "date": "2016" },
+    { "id": "bruce-1958", "type": "article", "title": "The Krampus in Styria", "authors": ["Maurice Bruce"], "publication": "Folklore", "date": "1958" },
+    { "id": "wikipedia-krampus", "type": "website", "title": "Krampus", "url": "https://en.wikipedia.org/wiki/Krampus", "accessed": "2026-05-08" }
+  ]
 }
